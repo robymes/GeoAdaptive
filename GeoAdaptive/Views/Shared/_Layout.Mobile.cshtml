@@ -1,0 +1,26 @@
+﻿@using Combres.Mvc;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title - GeoAdaptive</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @Url.CombresLink("siteCss_Mobile")
+    @Url.CombresLink("siteJs_Mobile")
+    <script type="text/javascript">
+        jQuery(document).bind("mobileinit", function () {
+            jQuery.mobile.ajaxEnabled = false;
+            jQuery.mobile.pushStateEnabled = false;
+        });
+    </script>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

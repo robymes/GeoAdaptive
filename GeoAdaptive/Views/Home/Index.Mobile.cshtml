@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Map";
+}
+
+<div data-role="page" id="mapPage" style="width: 100%; padding: 0;">
+    <div data-role="header" id="headerBar">       
+        <h1>GeoAdaptive</h1>
+    </div>
+    <div data-role="content" style="width: 100%; padding: 0;">
+        <div id="mapDiv" style="width: 100%; padding: 0;">
+        </div>
+    </div>    
+    <div data-role="footer" id="footerBar">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#legendDialog" data-rel="dialog" data-transition="flip">Legend</a></li>
+                <li><a href="#basemapsDialog" data-rel="dialog" data-transition="flip">Basemaps</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="dialog" id="legendDialog" data-overlay-theme="a">
+    <div data-role="header">
+        <h1>Legend</h1>
+    </div>
+    <div data-role="content">
+        <div id="legendDiv"></div>
+        <a href="#" data-role="button" data-rel="back" data-inline="true">OK</a>
+    </div>
+</div>
+<div data-role="dialog" id="basemapsDialog" data-overlay-theme="a">
+    <div data-role="header">
+        <h1>Basemaps</h1>
+    </div>
+    <div data-role="content" style="font-size: small;">
+        <div id="basemapsDiv"></div>
+        <a href="#" data-role="button" data-rel="back" data-inline="true">OK</a>
+    </div>
+</div>

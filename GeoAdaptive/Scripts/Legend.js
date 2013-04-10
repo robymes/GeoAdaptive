@@ -5,6 +5,7 @@
 dojo.require("esri.dijit.Legend");
 
 GeoAdaptive.Legend = (function () {
+    //Pippo
     var ctor = function (legendDiv, map, layers) {
         var self, legend, layerInfo;
         self = this;
